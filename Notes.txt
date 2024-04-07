@@ -3,10 +3,14 @@ JoeSloeMoe  https://github.com/JoeSloeMoe/Crouch
 
 1.0.1  7th April 2024
 
-Allows the player to recycle/scrap Weapon and Tool Parts.
+Weapon and Tools Parts are considered primitive materials and cant be Scrapped down further.
+
+This mod allows the player to recycle Weapon and Tool Parts using Recipe functionality rather than the Scrap function.
 Bow and Military Armour parts scrap to 25 Polymer.
 All other Parts scrap to 25 Iron.
 
-Select either Recipes->Iron or Recipes->Scrap Polymer, then the amount to scrap depending on the Part. 
+Select either Recipes->Iron or Recipes->Scrap Polymer depending on the Part, then the amount to scrap. 
 (A key - select recipe - W key)
+
+Extra throw in: Crucibles and Anvils can now be scrapped using the regular Scrap Option with this mod.
 

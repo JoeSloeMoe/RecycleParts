@@ -1,0 +1,12 @@
+Recycle Weapon and Tools parts - A21 7DTD XML mod.
+JoeSloeMoe  https://github.com/JoeSloeMoe/Crouch
+
+1.0.1  7th April 2024
+
+Allows the player to recycle/scrap Weapon and Tool Parts.
+Bow and Military Armour parts scrap to 25 Polymer.
+All other Parts scrap to 25 Iron.
+
+Select either Recipes->Iron or Recipes->Scrap Polymer, then the amount to scrap depending on the Part. 
+(A key - select recipe - W key)
+

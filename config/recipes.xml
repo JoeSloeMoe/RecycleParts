@@ -2,7 +2,7 @@
 	
 	<append xpath="/recipes">
 		<!--recipies for scrapping tool and weapon parts-->
-		<recipe name="resourceScrapIron" count="25" craft_time="2">
+		<recipe name="resourceScrapIron" count="15" craft_time="2">
 			<ingredient name="armorSteelSetParts" count="1"/>
 		</recipe>
 		<recipe name="resourceScrapPolymers" count="15" craft_time="2">

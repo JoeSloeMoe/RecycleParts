@@ -1,0 +1,8 @@
+<configs>
+	<!--set anvil and crucilble to be scrappable (by setting the wieght - will scrap to 57% of the weight for diff materials)-->
+	<set xpath="/items/item[@name='toolAnvil']/property[@name='Weight']/@value">400</set>
+	<set xpath="/items/item[@name='toolForgeCrucible']/property[@name='Material']/@value">Msteel</set>
+	<append xpath="/items/item[@name='toolForgeCrucible']">
+		<property name="Weight" value="667"/>
+	</append>
+</configs>

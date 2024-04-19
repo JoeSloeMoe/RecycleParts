@@ -14,3 +14,5 @@ Select either Recipes->Iron or Recipes->Scrap Polymer depending on the Part, the
 
 Extra throw in: Crucibles and Anvils can now be scrapped using the regular Scrap Option with this mod.
 
+1.0.2 18th April 2024
+   - Linux pathing compatability fix

@@ -1,8 +1,316 @@
 <configs>
-	<!--set anvil and crucilble to be scrappable (by setting the wieght - will scrap to 57% of the weight for diff materials)-->
+	<!--begin recycle code-->
+	
+	<!--Scrapping is controlled by setting the weight, output scrap is a percentage of the weight depending on the material.
+		Set anvil, bellows and crucible weights etc. -->
 	<set xpath="/items/item[@name='toolAnvil']/property[@name='Weight']/@value">400</set>
 	<set xpath="/items/item[@name='toolForgeCrucible']/property[@name='Material']/@value">Msteel</set>
 	<append xpath="/items/item[@name='toolForgeCrucible']">
 		<property name="Weight" value="667"/>
 	</append>
+	<set xpath="/items/item[@name='toolBellows']/property[@name='Material']/@value">MresourceLeather</set>
+	<append xpath="/items/item[@name='toolBellows']">
+		<property name="Weight" value="150"/>
+	</append>
+
+	<!--Vehicle parts.
+		Parts have their Material changed as well as their weight-->
+	<append xpath="/items/item[@name='vehicleWheels']"><property name="Weight" value="30"/></append>
+	<append xpath="/items/item[@name='vehicleMinibikeChassis']"><property name="Weight" value="200"/></append>
+	<append xpath="/items/item[@name='vehicleMinibikeHandlebars']"><property name="Weight" value="150"/></append>
+	<append xpath="/items/item[@name='vehicleBicycleChassis']"><property name="Weight" value="100"/></append>
+	<append xpath="/items/item[@name='vehicleBicycleHandlebars']"><property name="Weight" value="100"/></append>
+	<append xpath="/items/item[@name='vehicleMotorcycleChassis']"><property name="Weight" value="1600"/></append>
+	<append xpath="/items/item[@name='vehicleMotorcycleHandlebars']"><property name="Weight" value="350"/></append>
+	<append xpath="/items/item[@name='vehicleTruck4x4Chassis']"><property name="Weight" value="16000"/></append>
+	<append xpath="/items/item[@name='vehicleTruck4x4Accessories']"><property name="Weight" value="1134"/></append>
+	<append xpath="/items/item[@name='vehicleGyroCopterChassis']"><property name="Weight" value="9250"/></append>
+	<append xpath="/items/item[@name='vehicleGyroCopterAccessories']"><property name="Weight" value="1134"/></append>
+	<!--end recycle code-->
+	
+	<!--adding bundles to scrap different kinds of ammo 
+		All bundles assume bundles of 50 (unless otherwise commented) when calculating scrap returns exccept TimedCharges (which uses bundle of 5 and 80% return)
+		and generally return 75% (38 per 50) of the intial bullet recipe -->
+	<append xpath="/items">	
+		<item name="SNTBundleTemplate">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="ItemTypeIcon" value="bundle"/> <!--set a default bundle icon-->
+		</item>
+		<!--7.62 ammo-->
+		<item name="scrap762AmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo762mmBulletBall"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap762AmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="38,114,38"/>  <!--create recipe is 1,3,1 per bullet-->
+			</property>
+		</item>	
+		<item name="scrap762HPAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo762mmBulletHP"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap762HPAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="76,114,38"/> <!--create recipe is 2,3,1 per bullet-->
+			</property>
+		</item>	
+		<item name="scrap762APAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo762mmBulletAP"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap762APAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="76,190,38"/> <!--create recipe is 2,5,1 per bullet-->
+			</property>
+		</item>	
+		<!--end 7.62 ammo -->
+		<!--9mm ammo-->
+		<item name="scrap9mmAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo9mmBulletBall"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap9mmAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="38,38,38"/>  <!--create recipe is 1,1,1 per bullet-->
+			</property>
+		</item>	
+		<item name="scrap9mmHPAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo9mmBulletHP"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap9mmHPAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="76,38,38"/> <!--create recipe is 2,1,1 per bullet-->
+			</property>
+		</item>	
+		<item name="scrap9mmAPAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo9mmBulletAP"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap9mmAPAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="76,76,38"/> <!--create recipe is 2,2,1 per bullet-->
+			</property>
+		</item>	
+		<!--end 9mm ammo -->
+		<!--44 ammo-->
+		<item name="scrap44AmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap44AmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="38,76,38"/>  <!--create recipe is 1,2,1 per bullet-->
+			</property>
+		</item>	
+		<item name="scrap44HPAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap44HPAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="76,76,38"/> <!--create recipe is 2,2,1 per bullet-->
+			</property>
+		</item>	
+		<item name="scrap44APAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrap44APAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="76,114,38"/> <!--create recipe is 2,3,1 per bullet-->
+			</property>
+		</item>	
+		<!--end 45 ammo -->
+		<!--shotgun ammo-->
+		<item name="scrapShotgunAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammoShotgunShell"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapShotgunAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper"/>
+				<property name="Create_item_count" value="38,152,38"/>  <!--create recipe is 1,4,1 per bullet-->
+			</property>
+		</item>		
+		<item name="scrapShotgunBreachingAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammoShotgunBreachingSlug"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapShotgunBreachingAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedSteel,resourceClayLump,resourceGunPowder,resourceScrapPolymers"/>
+				<property name="Create_item_count" value="114,76,152,38"/> <!--create recipe is 3,2,4,1 per bullet-->
+			</property>
+		</item>	
+		<item name="scrapShotgunSlugAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammoShotgunSlug"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapShotgunSlugAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers"/>
+				<property name="Create_item_count" value="76,190,38"/> <!--create recipe is 2,5,1 per bullet-->
+			</property>
+		</item>	
+		<!--end shotgun ammo -->
+		<!--explosives etc-->
+		<item name="scrapMolotovCocktailBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="thrownAmmoMolotovCocktail"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapMolotovCocktailBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCloth,ammoGasCan,resourceOil"/>
+				<property name="Create_item_count" value="15,1125,4"/> <!--create recipe is 4,300,1 per moly-->
+			</property>
+		</item>	
+		<item name="scrapPipeBombBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="thrownAmmoPipeBomb"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapPipeBombBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceYuccaFibers,resourceGunPowder,resourceMetalPipe"/>
+				<property name="Create_item_count" value="4,45,4"/> <!--create recipe is 1,12,1 per pipe bomb-->
+			</property>
+		</item>	
+		<item name="scrapthrownGrenadeBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="thrownGrenade"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapthrownGrenadeBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceMechanicalParts,resourceGunPowder,resourceForgedIron,resourceSpring"/>
+				<property name="Create_item_count" value="4,53,15,4"/> <!--create recipe is 1,14,4,1 per grenade-->
+			</property>
+		</item>	
+		<item name="scrapthrownGrenadeContactBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="thrownGrenadeContact"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapthrownGrenadeContactBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceMechanicalParts,resourceGunPowder,resourceForgedIron,resourceSpring"/>
+				<property name="Create_item_count" value="8,53,15,4"/> <!--create recipe is 2,14,4,1 per bullet-->
+			</property>
+		</item>	
+		<!--Timed Charges-->
+		<item name="scrapTimedChargesBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="thrownTimedCharge"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapTimedChargesBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapIron,resourceGunPowder,resourceElectricParts"/>
+				<property name="Create_item_count" value="80,40,4"/>  <!--create recipe is 20,10,1 per bullet-->
+			</property>
+		</item>	
+		<!--end explosives etc.-->
+		<!--Turret Ammo, 100 per bundle-->
+		<item name="scrapTurretAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammoJunkTurretRegular"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapTurretAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapLead"/>
+				<property name="Create_item_count" value="200"/>  <!--create recipe is 3 per bullet-->
+			</property>
+		</item>
+		<!--turret shells, 100 per bundle-->
+		<item name="scrapShellTurretAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammoJunkTurretShell"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapShellTurretAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapLead,resourceBuckshot"/>
+				<property name="Create_item_count" value="75,75"/>  <!--create recipe is 1,1 per bullet-->
+			</property>
+		</item>	
+		<!--AP turret ammo, 100 per bundle-->
+		<item name="scrapAPTurretAmmoBundle">
+			 <property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="ammoJunkTurretAP"/>
+			<property name="CustomIconTint" value="255,152,152"/>
+			<property name="DescriptionKey" value="scrapAPTurretAmmoBundleDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapLead,resourceScrapIron"/>
+				<property name="Create_item_count" value="200,200"/>  <!--create recipe is 3,3 per bullet-->
+			</property>
+		</item>	
+		
+	</append>
+	<!--end adding bundles to scrap different kinds of ammo -->
+	
+	
+	<!--bundles for other ammo types stuff - casings, bullet tips and buckshop.
+		see recipes.xml for other ammo bundles -->
+	<append xpath="/items">
+		<item name="bulletCasingBundle">
+			<property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/>
+			<property name="DescriptionKey" value="bulletCasingBundleDesc"/> 
+			<property name="Stacknumber" value="10"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletCasing"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+		<item name="bulletTipBundle">
+			<property name="Extends" value="SNTBundleTemplate"/>
+			<property name="CustomIcon" value="resourceBulletTip"/>
+			<property name="DescriptionKey" value="bulletTipBundleDesc"/> 
+			<property name="Stacknumber" value="10"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+		<item name="buckshotBundle">
+			<property name="Extends" value="SNTBundleTemplate"/>
+			<property name="DescriptionKey" value="buckshotBundleDesc"/> 
+			<property name="CustomIcon" value="resourceBuckshot"/>
+			<property name="Stacknumber" value="10"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBuckshot"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+	</append>
+
 </configs>

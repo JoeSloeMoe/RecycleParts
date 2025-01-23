@@ -1,18 +1,39 @@
-Recycle Weapon and Tools parts - A21 7DTD XML mod.
+Recycle tools, weapons and ammo.
 JoeSloeMoe  https://github.com/JoeSloeMoe/Crouch
 
-1.0.1  7th April 2024
+The in-game Armour, Tool & Weapon Parts are considered primitive materials and cant be Scrapped down further.
+This mod enables a variety of items to be scrapped including tool, weapon and vehicle parts.
 
-Weapon and Tools Parts are considered primitive materials and cant be Scrapped down further.
+Things that can be scrapped using recipes:
+- All armour, tool and weapon parts.
+- Ammo that can be scrapped (returns 75% of materials): 
+     - All variants of 9mm, 7.62, 44, shotgun ammo, turret ammo
+	 - Molotovs, pipe bombs, grenades, timed charges
 
-This mod allows the player to recycle Weapon and Tool Parts using Recipe functionality rather than the Scrap function.
-Bow and Military Armour parts scrap to 25 Polymer.
-All other Parts scrap to 25 Iron.
+Things that can be scrapped normally (using 'Scrap' option)
+- Anvil, bellows, crucible.
+- All vehicle parts.
 
+To use the recipes:
+To scrap Parts:
 Select either Recipes->Iron or Recipes->Scrap Polymer depending on the Part, then the amount to scrap. 
 (A key - select recipe - W key)
 
-Extra throw in: Crucibles and Anvils can now be scrapped using the regular Scrap Option with this mod.
+To scrap Ammo:
+Select "Stack of 50 scrapped xxx ammo" (A key - select recipe - craft in workbench).
+Unpack the bundle for the gunpowder, bullet tips etc.
+Molotov and Pipe Bomb scrap bundles dont need a workbench for crafting.
 
+Extra Stuff:
+This mod also includes some basic ammo bundling recipes. 	 
+Ammo that can be bundled/stacked using recipes:
+   - All variants of 9mm, 7.62, 44, shotgun ammo, turret ammo
+   - Gunpowder, bullet casings, bullet tips, buckshot
+
+
+1.0.1  7th April 2024
 1.0.2 18th April 2024
    - Linux pathing compatability fix
+1.1.0
+   - V1.x compatibility update
+   - Added scrapping vehicle parts

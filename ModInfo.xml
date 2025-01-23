@@ -2,8 +2,8 @@
 <xml>
     <Name value="RecycleParts" /> 
     <DisplayName value="RecycleParts" />
-    <Version value="1.0.2.0" /> 
     <Description value="RecycleParts" /> 
+	<Version value="1.0.0.1" /> 
     <Author value="JoeSloeMoe" /> 
     <Website value="" /> 
 </xml>

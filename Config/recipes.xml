@@ -2,58 +2,199 @@
 	
 	<append xpath="/recipes">
 		<!--recipies for scrapping tool and weapon parts-->
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
-			<ingredient name="armorSteelSetParts" count="1"/>
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
+			<ingredient name="armorParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapPolymers" count="15" craft_time="2">
-			<ingredient name="armorMilitarySetParts" count="1"/>
-		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeToolAllSteelParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeWpnClubT3SteelClubParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeWpnSpearT3SteelSpearParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeWpnBladeT3MacheteParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeWpnBatonT2StunBatonParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="gunBotRoboticsParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="gunExplosivesT3RocketLauncherParts" count="1"/>
 		</recipe>
 		<recipe name="resourceScrapPolymers" count="15" craft_time="2">
 			<ingredient name="gunBowT1WoodenBowParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="gunShotgunT1DoubleBarrelParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="gunRifleT1HuntingRifleParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="gunHandgunT1PistolParts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="gunMGT1AK47Parts" count="1"/>
 		</recipe>
-		<recipe name="resourceScrapIron" count="15" craft_time="2">
+		<recipe name="resourceScrapIron" count="12" craft_time="2">
 			<ingredient name="meleeToolAxeT3ChainsawParts" count="1"/>
 		</recipe>
 		<!--end recipies for scrapping tool and weapon parts-->
+	
+	
+		<!--ammo scrapping bundle recipies -->
+		<!--7.62 -->
+		<recipe name="scrap762AmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo762mmBulletBall" count="50"/>
+		</recipe>
+		<recipe name="scrap762HPAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo762mmBulletHP" count="50"/>
+		</recipe>	
+		<recipe name="scrap762APAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo762mmBulletAP" count="50"/>
+		</recipe>			
+		<!--9mm -->
+		<recipe name="scrap9mmAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo9mmBulletBall" count="50"/>
+		</recipe>
+		<recipe name="scrap9mmHPAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo9mmBulletHP" count="50"/>
+		</recipe>	
+		<recipe name="scrap9mmAPAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo9mmBulletAP" count="50"/>
+		</recipe>
+		<!-- 44 Magnum -->
+		<recipe name="scrap44AmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo44MagnumBulletBall" count="50"/>
+		</recipe>
+		<recipe name="scrap44HPAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo44MagnumBulletHP" count="50"/>
+		</recipe>	
+		<recipe name="scrap44APAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammo44MagnumBulletAP" count="50"/>
+		</recipe>
+		<!--Shotgun -->
+		<recipe name="scrapShotgunAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammoShotgunShell" count="50"/>
+		</recipe>
+		<recipe name="scrapShotgunSlugAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammoShotgunSlug" count="50"/>
+		</recipe>
+		<recipe name="scrapShotgunBreachingAmmoBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="ammoShotgunBreachingSlug" count="50"/>
+		</recipe>	
+		
+		<recipe name="scrapMolotovCocktailBundle" count="1" craft_time="20">
+				<ingredient name="thrownAmmoMolotovCocktail" count="5"/>
+		</recipe>	
+		<recipe name="scrapPipeBombBundle" count="1" craft_time="20">
+				<ingredient name="thrownAmmoPipeBomb" count="5"/>
+		</recipe>	
+		<recipe name="scrapthrownGrenadeBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="thrownGrenade" count="5"/>
+		</recipe>	
+		<recipe name="scrapthrownGrenadeContactBundle" count="1" craft_area="workbench"  craft_time="20" tags="workbenchCrafting">
+				<ingredient name="thrownGrenadeContact" count="5"/>
+		</recipe>	
+		<!--Timed Charges-->
+		<recipe name="scrapTimedChargesBundle" count="1"  craft_time="20">
+				<ingredient name="thrownTimedCharge" count="5"/>
+		</recipe>
+		<!--turret ammo-->
+		<recipe name="scrapTurretAmmoBundle" count="1"  craft_time="20" craft_area="workbench">
+				<ingredient name="ammoJunkTurretRegular" count="100"/>
+		</recipe>
+		<recipe name="scrapShellTurretAmmoBundle" count="1"  craft_time="20" craft_area="workbench">
+				<ingredient name="ammoJunkTurretShell" count="100"/>
+		</recipe>
+		<recipe name="scrapAPTurretAmmoBundle" count="1"  craft_time="20" craft_area="workbench">
+				<ingredient name="ammoJunkTurretAP" count="100"/>
+		</recipe>
+		<!--End Turret ammo-->
+		<!-- end ammo bundles -->
 	</append>
 
+	<!--some Ammo bundle recipes.
+	    Most of these bundles already exist in-game. These recipes just allow the player to create them.
+		Casing, bullet tips and buckshop dont have in-game bundles already defined and are defined initems.xml-->
+	<append xpath="/recipes">
+	<!--ammo storage boxes-->
+		<!--9mm box of bullets-->
+		<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="3" >
+			<ingredient name="ammo9mmBulletBall" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="3" >
+			<ingredient name="ammo9mmBulletAP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="3" >
+			<ingredient name="ammo9mmBulletHP" count="100"/>
+		</recipe>
+		<!--44 Magnum box of bullets-->
+		<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="3" >
+			<ingredient name="ammo44MagnumBulletBall" count="100"/> 
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="3" >
+			<ingredient name="ammo44MagnumBulletAP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="3" >
+			<ingredient name="ammo44MagnumBulletHP" count="100"/>
+		</recipe>
+		<!--7.62 box of bullets-->
+		<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="3" >
+			<ingredient name="ammo762mmBulletBall" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="3" >
+			<ingredient name="ammo762mmBulletAP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="3" >
+			<ingredient name="ammo762mmBulletHP" count="100"/>
+		</recipe>
+		<!--box of shotgun shells-->
+		<recipe name="ammoBundleShotgunShell" count="1" craft_time="3" >
+			<ingredient name="ammoShotgunShell" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunSlug" count="1" craft_time="3" >
+			<ingredient name="ammoShotgunSlug" count="100"/>
+		</recipe>
+		<recipe name="ammoShotgunBreachingSlug" count="1" craft_time="3" >
+			<ingredient name="ammoShotgunBreachingSlug" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="3" >
+			<ingredient name="ammoJunkTurretRegular" count="1000"/>
+		</recipe>
+		<recipe name="ammoBundleJunkTurretAP" count="1" craft_time="3" >
+			<ingredient name="ammoJunkTurretAP" count="1000"/>
+		</recipe>
+		<recipe name="ammoBundleJunkTurretShell" count="1" craft_time="3" >
+			<ingredient name="ammoJunkTurretShell" count="1000"/>
+		</recipe>
+
+		<recipe name="resourceGunPowderBundle" count="1" craft_time="3" >
+			<ingredient name="resourceGunPowder" count="1000"/>
+		</recipe>
+		<!--casings, tips and buckshot dont have an in-game bundle already defined.
+			The bundles below are defined in items.xml-->
+		<recipe name="bulletCasingBundle" count="1" craft_time="3" >
+			<ingredient name="resourceBulletCasing" count="1000"/>
+		</recipe>
+		<recipe name="bulletTipBundle" count="1" craft_time="3" >
+			<ingredient name="resourceBulletTip" count="1000"/>
+		</recipe>
+		<recipe name="buckshotBundle" count="1" craft_time="3" >
+			<ingredient name="resourceBuckshot" count="1000"/>
+		</recipe>
+		<!--end ammo storage bundles-->
+	</append>
+	<!--end some ammo bundling recipes-->
 </configs>

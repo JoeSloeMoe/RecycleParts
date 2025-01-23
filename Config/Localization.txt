@@ -1,0 +1,47 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+bulletCasingBundle,items,Item,,,Box of 1000 Bullet Casings
+bulletCasingBundleDesc,items,Item,,,Box of 1000 Bullet Casings. \nUse this item to open and unpack it.
+bulletTipBundle,items,Item,,,Box of 1000 Bullet Tips
+bulletTipBundleDesc,items,Item,,,Box of 1000 Bullet Tips. \nUse this item to open and unpack it.
+buckshotBundle,items,Item,,,Box of 1000 Buckshot
+buckshotBundleDesc,items,Item,,,Box of 1000 Buckshot. \nUse this item to open and unpack it.
+scrap762AmmoBundle,items,Item,,,Stack of 50 scrapped 7.62 ammo.
+scrap762AmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 7.62 ammo.\nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap762HPAmmoBundle,items,Item,,,Stack of 50 scrapped 7.62 HP ammo.
+scrap762HPAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 7.62 HP ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap762APAmmoBundle,items,Item,,,Stack of 50 scrapped 7.62 AP ammo.
+scrap762APAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 7.62 AP ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap9mmAmmoBundle,items,Item,,,Stack of 50 scrapped 9mm ammo.
+scrap9mmAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 9mm ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap9mmHPAmmoBundle,items,Item,,,Stack of 50 scrapped 9mm HP ammo.
+scrap9mmHPAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 9mm HP ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap9mmAPAmmoBundle,items,Item,,,Stack of 50 scrapped 9mm AP ammo.
+scrap9mmAPAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 9mm AP ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap44AmmoBundle,items,Item,,,Stack of 50 scrapped 44 Magnum ammo.
+scrap44AmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 44 Magnum ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap44HPAmmoBundle,items,Item,,,Stack of 50 scrapped 44 Magnum HP ammo.
+scrap44HPAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 44 Magnum HP ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrap44APAmmoBundle,items,Item,,,Stack of 50 scrapped 44 Magnum AP ammo.
+scrap44APAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped 44 Magnum AP ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapShotgunAmmoBundle,items,Item,,,Stack of 50 scrapped Shotgun ammo.
+scrapShotgunAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped Shotgun ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapShotgunBreachingAmmoBundle,items,Item,,,Stack of 50 scrapped Shotgun Breaching ammo.
+scrapShotgunBreachingAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped Shotgun Breaching ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapShotgunSlugAmmoBundle,items,Item,,,Stack of 50 scrapped Shotgun Slug ammo.
+scrapShotgunSlugAmmoBundleDesc,items,Item,,,This is a compact stack of 50 scrapped Shotgun Slug ammo. \nCreate this bundle using ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapMolotovCocktailBundle,items,Item,,,Stack of 5 scrapped Molotov Cocktails.
+scrapMolotovCocktailBundleDesc,items,Item,,,This is a compact stack of 5 Molotov Cocktails.\nCreate this bundle using Molotov Cocktails to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapPipeBombBundle,items,Item,,,Stack of 5 scrapped Pipe Bombs.
+scrapPipeBombBundleDesc,items,Item,,,This is a compact stack of 5 Pipe Bombs.\nCreate this bundle using Pipe Bombs to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapthrownGrenadeBundle,items,Item,,,Stack of 5 scrapped Grenades.
+scrapthrownGrenadeBundleDesc,items,Item,,,This is a compact stack of 5 Grenades.\nCreate this bundle using Grenades to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapthrownGrenadeContactBundle,items,Item,,,Stack of 5 scrapped Contact Grenades.
+scrapthrownGrenadeContactBundleDesc,items,Item,,,This is a compact stack of 5 Contact Grenades.\nCreate this bundle using Contact Grenades to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it.
+scrapTimedChargesBundle,items,Item,,,Stack of 5 scrapped Timed Charges.
+scrapTimedChargesBundleDesc,items,Item,,,This is a compact stack of 5 Times Charges.\nCreate this bundle using Timed Charges to be scrapped.\nReturns 80% of materials.\nUse this item to open and unpack it.
+scrapTurretAmmoBundle,items,Item,,,Stack of 100 scrapped Junk Turret Ammo.
+scrapTurretAmmoBundleDesc,items,Item,,,"This is a compact stack of 100 scrapped Junk Turret Ammo.\nCreate this bundle using Junk Turret Ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it."
+scrapAPTurretAmmoBundle,items,Item,,,Stack of 100 scrapped AP Junk Turret Ammo.
+scrapAPTurretAmmoBundleDesc"This is a compact stack of 100 scrapped AP Junk Turret Ammo.\nCreate this bundle using AP Junk Turret Ammo to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it."
+scrapShellTurretAmmoBundle,items,Item,,,Stack of 100 scrapped Junk Turret Shells.
+scrapShellTurretAmmoBundleDesc"This is a compact stack of 100 scrapped Junk Turret Shells.\nCreate this bundle using Junk Turret Shells to be scrapped.\nReturns 75% of materials.\nUse this item to open and unpack it."

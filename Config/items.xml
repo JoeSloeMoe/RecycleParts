@@ -14,7 +14,7 @@
 	</append>
 
 	<!--Vehicle parts.
-		Parts have their Material changed as well as their weight-->
+		Parts have their weight changed-->
 	<append xpath="/items/item[@name='vehicleWheels']"><property name="Weight" value="30"/></append>
 	<append xpath="/items/item[@name='vehicleMinibikeChassis']"><property name="Weight" value="200"/></append>
 	<append xpath="/items/item[@name='vehicleMinibikeHandlebars']"><property name="Weight" value="150"/></append>

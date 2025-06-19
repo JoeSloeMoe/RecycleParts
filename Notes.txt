@@ -34,6 +34,10 @@ Ammo that can be bundled/stacked using recipes:
 1.0.1  7th April 2024
 1.0.2 18th April 2024
    - Linux pathing compatability fix
+
 1.1.0
    - V1.x compatibility update
    - Added scrapping vehicle parts
+
+2.0.1 - 18th June 2025
+ - 7DTD 2.0 compatibility release.

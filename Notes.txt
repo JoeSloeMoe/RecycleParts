@@ -1,8 +1,8 @@
-Recycle tools, weapons and ammo.
+Recycle tools, weapons, ammo and other items.
 JoeSloeMoe  https://github.com/JoeSloeMoe/Crouch
 
 The in-game Armour, Tool & Weapon Parts are considered primitive materials and cant be Scrapped down further.
-This mod enables a variety of items to be scrapped including tool, weapon and vehicle parts.
+This mod enables a variety of items to be scrapped including tool, weapon, vehicle parts and the Insulated Armour mods.
 
 Things that can be scrapped using recipes:
 - All armour, tool and weapon parts.
@@ -13,6 +13,7 @@ Things that can be scrapped using recipes:
 Things that can be scrapped normally (using 'Scrap' option)
 - Anvil, bellows, crucible.
 - All vehicle parts.
+- Cloth, Padded and Advanced Insulated Armor Mods
 
 To use the recipes:
 To scrap Parts:
@@ -41,3 +42,7 @@ Ammo that can be bundled/stacked using recipes:
 
 2.0.1 - 18th June 2025
  - 7DTD 2.0 compatibility release.
+ 
+2.0.2
+ - Added ability to scrap Cloth, Padded and Advanced Insulated Armor Mods
+ 

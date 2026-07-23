@@ -46,3 +46,6 @@ Ammo that can be bundled/stacked using recipes:
 2.0.2
  - Added ability to scrap Cloth, Padded and Advanced Insulated Armor Mods
  
+3.0.1 - 13th July 2026
+ - 7DTD 3.x compatibility release.
+ 
